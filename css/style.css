@@ -1,0 +1,123 @@
+body {
+    color: #000;
+    background-color: var(--falcon-body-bg);
+    font-family: Roboto, sans-serif
+}
+
+.card {
+    border: 0 solid var(--falcon-card-border-color);
+    border-radius: .375rem;
+    box-shadow: var(--falcon-box-shadow);
+    background-color: #ecf0f3;
+    color: #a0a5a8
+}
+
+.card .card--heading {
+    color: #31344b
+}
+
+.bg-card {
+    background-image: url(../img/corner-4.png);
+    background-size: cover;
+    background-position: right;
+    border-top-right-radius: .375rem;
+    border-bottom-right-radius: .375rem
+}
+
+.bg-holder {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-repeat: no-repeat
+}
+
+.btn--primary {
+    border-radius: 25px;
+    letter-spacing: 1px;
+    background-color: #4b70e2;
+    color: #f9f9f9;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+    border: none;
+    outline: 0;
+    padding: 10px 40px;
+    transform: scale(1)
+}
+
+.btn--primary:focus,
+.btn--primary:hover {
+    color: #f9f9f9;
+    box-shadow: 6px 6px 10px #d1d9e6, -6px -6px 10px #f9f9f9;
+    transform: scale(.985);
+    transition: .25s
+}
+
+.btn-tabs {
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+    color: #31344b
+}
+
+.nav-tabs {
+    background-color: #ecf0f3;
+    box-shadow: 4px 4px 10px #d1d9e6, -4px -4px 10px #f9f9f9;
+    padding: 20px
+}
+
+.btn-tabs::before {
+    content: "📒"
+}
+
+.btn-tabs.active::before {
+    content: "📖"
+}
+
+#v-pills-tabContent .tab-pane {
+    padding: 20px
+}
+
+.form__input {
+    letter-spacing: .15px;
+    border: none;
+    outline: 0;
+    padding: .5rem 1rem;
+    background-color: #ecf0f3;
+    transition: .25s ease;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9
+}
+
+.form__input:focus {
+    box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9
+}
+
+.callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    background: #fff;
+    color: #31344b;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1
+}
+
+.callout-info {
+    border-left-color: #5bc0de
+}
+
+.accordion-item .accordion-button {
+    box-shadow: none
+}
+
+#bai1 form {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5)
+}
+
+.callout-warning {
+    border-left-color: rgba(255,193,7,0.5);
+}
